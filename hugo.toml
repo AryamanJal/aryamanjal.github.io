@@ -1,0 +1,40 @@
+baseURL = 'https://aryamanjal.github.io/'
+languageCode = 'en-us'
+title = 'Aryaman Jal'
+theme = 'hugo-bearblog'
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']
+
+[params]
+  author = 'Aryaman Jal'
+  description = 'Academic website of Aryaman Jal. Algebraic and geometric combinatorics.'
+  hideMadeWithLine = true
+  portrait = 'images/portrait.jpg'
+
+[[menus.main]]
+  name = 'About'
+  pageRef = '/'
+  weight = 10
+[[menus.main]]
+  name = 'Research'
+  url = '/#research'
+  weight = 20
+[[menus.main]]
+  name = 'Publications'
+  url = '/#publications'
+  weight = 30
+[[menus.main]]
+  name = 'Teaching'
+  pageRef = '/teaching'
+  weight = 35
+[[menus.main]]
+  name = 'Activities'
+  pageRef = '/activities'
+  weight = 37
+[[menus.main]]
+  name = 'Contact'
+  pageRef = '/contact'
+  weight = 40
+
+[markup.goldmark.extensions]
+  linkify = false

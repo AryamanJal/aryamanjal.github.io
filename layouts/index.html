@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article id="main" tabindex="-1">
+  <div class="profile-heading">
+    <h1>{{ .Title }}</h1>
+    {{ with .Site.Params.portrait }}
+    <img class="portrait" src="{{ . | relURL }}" alt="Portrait of {{ $.Site.Title }}" width="2000" height="1333">
+    {{ end }}
+  </div>
+  {{ .Content }}
+</article>
+{{ end }}
